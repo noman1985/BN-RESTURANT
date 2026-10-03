@@ -88,6 +88,8 @@ p { color: #C88B35;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(212, 175, 55, 0.15);
   text-align: center;
+  animation: fadeIn 4s ease-in-out forwards;
+
   
 }
 button {
@@ -120,3 +122,49 @@ button {
     border-radius:8px ;
   } */
 
+/* animation */
+
+/* 1. Floating Effect - For Hero Image */
+@keyframes float { 0%, 100% { transform: translateY(0); }
+
+  50% { transform: translateY(-15px); }
+}
+.logo {
+    
+  animation: float 4s ease-in-out infinite;
+}
+/* @keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+} */
+/* 1. رائٹ سائیڈ سے آنے والی اینیمیشن */
+@keyframes slideFromRight {
+  from { 
+    opacity: 0; 
+    transform: translateX(100px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateX(0); 
+  }
+}
+
+/* 2. آپ کے باکس پر لگانا */
+.pk {
+  animation: slideFromRight 0.8s ease-out forwards;
+  opacity: 0; /* شروع میں غائب رہے گا تاکہ اینیمیشن نظر آئے */
+}
+
+/* 3. ایک ایک کر کے آنے کے لیے - یہ سب سے اہم ہے */
+.pk:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.pk:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.pk:nth-child(3) {
+  animation-delay: 0.7s;
+}
+.pk:nth-child(4) {
+  animation-delay: 0.8s;
+}
