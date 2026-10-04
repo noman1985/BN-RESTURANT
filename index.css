@@ -7,8 +7,20 @@ body {
      background-size: cover;
     background-position:center;
      background-attachment: fixed;
+     overflow-x: hidden;
 }
 
+
+@keyframes slideFromRight {
+  from { 
+    opacity: 0; 
+    transform: translateX(100px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateX(0px); 
+  }
+}
 
 
 .logo {
@@ -17,6 +29,10 @@ body {
     align-items: center;
     margin-top: 20px;
     margin-left: 20px;
+
+  animation: slideFromRight 0.8s ease-out forwards;
+
+
 }
 img {width: 500px;
     border-radius: 20px;
@@ -29,6 +45,11 @@ img {width: 500px;
      margin-left: 40%;
 }
 
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
 button { border-radius: 30px;
     font-size: xx-large;
     padding-left: 50px;
@@ -37,11 +58,10 @@ button { border-radius: 30px;
     padding-bottom: 10px;
     color: #c88b35;
     background-color: #282828;
+    animation: pulse 1.5s infinite;
 }
 button:hover {
     cursor: pointer;
-    background-clip: content-box;
-    transform: scale(2.2s);
-    transition: 2s;
+     animation: pulse 1.5s infinite;
     
 }
