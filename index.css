@@ -65,3 +65,44 @@ button:hover {
      animation: pulse 1.5s infinite;
     
 }
+
+/* ============================
+   MOBILE RESPONSIVE
+   ============================ */
+
+@media (max-width: 768px) {
+  
+  /* Logo */
+  .logo {
+    justify-content: center;
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+  
+  .logo img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  /* Button container */
+  .btn {
+    justify-content: center;
+    margin: 40px auto;
+    padding: 0 15px;
+  }
+  
+  /* Button */
+  button {
+    font-size: 20px;
+    padding: 12px 40px;
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  /* Body background */
+  body {
+    background-attachment: scroll;  /* mobile pe fixed background slow hota hai */
+  }
+}

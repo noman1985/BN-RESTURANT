@@ -81,7 +81,6 @@ p { color: #C88B35;
 
 
 .pk { 
-    margin-left: 100px;
     width: fit-content;
   background: #fffdf5;
   border: 2px solid #d4af37; /* سنہری بارڈر */
@@ -170,3 +169,68 @@ button {
 }
 
 
+/* ============================
+   MOBILE RESPONSIVE
+   ============================ */
+
+@media (max-width: 768px) {
+  
+  /* Navbar */
+  .links {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .links a {
+    font-size: 14px;
+  }
+  
+  /* Logo */
+  .logo {
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Grid → mobile pe 1 column */
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 15px;
+  }
+  
+  /* Har card */
+  .pk {
+    margin-left: 0;        /* yeh zaroori hai */
+    width: 100%;
+  }
+  
+  /* Card ki image */
+  .pk img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Paragraph */
+  p {
+    font-size: 16px;
+    margin-left: 0;
+  }
+  
+  /* Heading */
+  h1 {
+    font-size: 22px;
+  }
+  
+ /* Dropdown menu */
+  .menu {
+    min-width: 140px;
+    font-size: 14px;
+  }
+  
+  /* Button */
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
