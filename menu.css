@@ -81,15 +81,19 @@ p { color: #C88B35;
 
 
 .pk { 
-    width: fit-content;
+    width:100%;
   background: #fffdf5;
   border: 2px solid #d4af37; /* سنہری بارڈر */
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(212, 175, 55, 0.15);
   text-align: center;
-  animation: fadeIn 4s ease-in-out forwards;
+  animation: fadeIn 4s ease-in-out forwards; 
+}
 
-  
+.pk img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
 }
 button {
       border: 1px solid #d4af37;
