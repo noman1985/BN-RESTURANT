@@ -92,8 +92,8 @@ p { color: #C88B35;
 
 .pk img {
   width: 100%;
-  max-width: 300px;
-  height: auto;
+  height: 250px;
+  object-fit: cover;
 }
 button {
       border: 1px solid #d4af37;
